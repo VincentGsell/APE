@@ -9,20 +9,21 @@ I made first conversion version from "raw action script", the original one could
 
 I'll release now this code as is, perhaps it could be usefull for somebody ? I think It could be cool for a 2d casual game, or, as I said, just for teaching purpose : When I translate this code, I do not change Alec's original archiutecture, which I found right and solid :  I feel the Original ActionScript code very well written : try to keep its Object Model in Pascal version.
 
-# quick Features : 
+## quick Features : 
 - Circles, Rectangles and Wheels particles.
 - Spring constraints.
 - Groups processing.
 - Groups Collision.
 - Pure ObjectPascal : Lazarus (Win64/32 and Linux Arm tested) and Delphi (VCL an dFMX) are available.
 
-# The base concept is simple : 
+## The base concept is simple : 
 On grouping Particles with constraints, you'll build model with a real physical response, then, you register Collision interaction and you'll get a "physical Word"
 
 -> See "Car" examples, which is the original demo.
 
 Here the looks of Pascal Version, in Delphi (FMX) :
+## ScreenShots : (Delphi/FMX)
 
+Ape in action with original Car Demo
+  ![Alt text](/res/APE2DDelphiFMX.png?raw=true "Ape in action with original Car Demo (Delphu/FMX")
 
-
-Have fun !
