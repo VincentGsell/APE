@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7AD8871B-2569-487F-9577-43C91AC5AD85}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FMX\ApeCarFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCL\ApeCarVCL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ApeCarFMX">
+        <MSBuild Projects="FMX\ApeCarFMX.dproj"/>
+    </Target>
+    <Target Name="ApeCarFMX:Clean">
+        <MSBuild Projects="FMX\ApeCarFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApeCarFMX:Make">
+        <MSBuild Projects="FMX\ApeCarFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ApeCarVCL">
+        <MSBuild Projects="VCL\ApeCarVCL.dproj"/>
+    </Target>
+    <Target Name="ApeCarVCL:Clean">
+        <MSBuild Projects="VCL\ApeCarVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApeCarVCL:Make">
+        <MSBuild Projects="VCL\ApeCarVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ApeCarFMX;ApeCarVCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ApeCarFMX:Clean;ApeCarVCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ApeCarFMX:Make;ApeCarVCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

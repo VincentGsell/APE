@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="E:\FPCUPDeluxery\fpc\bin\x86_64-win64\fpc.exe" Date="1278769891"/>
+  <Params Value=" -MObjFPC -Sgi -O1 -g -gl -WG -l -vewnhibq -FiE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Apps\Car\Solutions\Lazarus\bin -FuE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Apps\Car\Sources -FuE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Sources -FuE:\FPCUPDeluxery\lazarus\lcl\units\x86_64-win64\win32 -FuE:\FPCUPDeluxery\lazarus\lcl\units\x86_64-win64 -FuE:\FPCUPDeluxery\lazarus\components\lazutils\lib\x86_64-win64 -FuE:\FPCUPDeluxery\lazarus\packager\units\x86_64-win64 -FuE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Apps\Car\Solutions\Lazarus\ -FUE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Apps\Car\Solutions\Lazarus\bin\ -FEE:\DATA\2018_GRIDSYSTEM\Code\__OpenSource\APE\Apps\Car\Solutions\Lazarus\bin\ -dLCL -dLCLwin32 APECar.lpr"/>
+</CONFIG>

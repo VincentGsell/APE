@@ -1,0 +1,11 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3'"'#1#6'Height'#3''''#2#3'Top'#3#149#0#5'W'
+  +'idth'#3#238#2#7'Caption'#6#12'APE Car Demo'#10'KeyPreview'#9#8'OnCreate'#7
+  +#10'FormCreate'#9'OnDestroy'#7#11'FormDestroy'#9'OnKeyDown'#7#11'FormKeyDown'
+  +#7'OnKeyUp'#7#9'FormKeyUp'#11'OnMouseDown'#7#13'FormMouseDown'#11'OnMouseMov'
+  +'e'#7#13'FormMouseMove'#7'OnPaint'#7#9'FormPaint'#6'OnShow'#7#8'FormShow'#10
+  +'LCLVersion'#6#7'1.9.0.0'#0#6'TTimer'#6'Timer1'#8'Interval'#2#1#7'OnTimer'#7
+  +#11'Timer1Timer'#4'Left'#2#31#3'Top'#2#17#0#0#0
+]);

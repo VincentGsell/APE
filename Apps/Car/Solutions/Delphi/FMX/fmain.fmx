@@ -1,0 +1,21 @@
+object FormCar: TFormCar
+  Left = 0
+  Top = 0
+  Caption = 'APE on Delphi...'
+  ClientHeight = 642
+  ClientWidth = 901
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  OnPaint = FormPaint
+  DesignerMasterStyle = 0
+  object TimerCarApp: TTimer
+    Interval = 10
+    OnTimer = TimerCarAppTimer
+    Left = 440
+    Top = 304
+  end
+end
