@@ -18,7 +18,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 Contact: ape@cove.org
 
-Converted to ObjectPascal by Vincent Gsell vincent.gsell@gmail.com
+2009.03.01 - Converted to ObjectPascal by Vincent Gsell [https://github.com/VincentGsell]
 }
 unit uBridge;
 
