@@ -27,7 +27,7 @@ Here the looks of Pascal Version, in Delphi (FMX) :
 ## ScreenShots : (Delphi/FMX)
 
 Ape in action with original Car Demo
-  ![Alt text](/res/APE2DDelphiFMX.png?raw=true "Ape in action with original Car Demo (Delphu/FMX")
+  ![Alt text](/res/APE2DDelphiFMX.png?raw=true "Ape in action with original Car Demo (Delphi/FMX")
 
 ## Demo available
 See "Car" examples, which is the original demo provide by original author.
