@@ -7,7 +7,6 @@
       <MainUnit Value="0"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
-      <ActiveWindowIndexAtStart Value="-1"/>
     </General>
     <VersionInfo>
       <Language Value=""/>
@@ -263,10 +262,10 @@
       <Unit36>
         <Filename Value="E:\Code\AfterWarpFrameWork\PXL\trunk\Source\Android.AppGlue.pas"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
-        <CursorPos X="13" Y="21"/>
+        <CursorPos X="52" Y="31"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit36>
     </Units>
     <JumpHistory HistoryIndex="-1"/>
