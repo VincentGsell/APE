@@ -20,8 +20,8 @@ On grouping Particles with constraints, you'll build model with a real physical 
 - Groups Collision.
 
 ## Pure ObjectPascal :
-- Lazarus (Win64/32 and Linux Arm tested)
-- Delphi (VCL an dFMX) are available.
+- Lazarus (LCL on Win64/32 and Linux Arm tested) (Required FPC 3+)
+- Delphi (VCL and FMX) are available. (should work from delphi7+ under VCL)
 
 Here the looks of Pascal Version, in Delphi (FMX) :
 ## ScreenShots : (Delphi/FMX)
