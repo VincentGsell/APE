@@ -20,7 +20,7 @@ Contact: ape@cove.org
 
 2009.03.01 - Converted to ObjectPascal by Vincent Gsell [https://github.com/VincentGsell]
 }
-unit uRenderer.GDI;
+unit uRenderer.NativeCanvas;
 
 interface
 
@@ -28,9 +28,9 @@ Uses uRenderer, Graphics, Classes, Math;
 
 Type
 
-  { TGDIRenderer }
+  { TNativeCanvasRenderer }
 
-  TGDIRenderer = Class(TAbstractRenderer)
+  TNativeCanvasRenderer = Class(TAbstractRenderer)
   Private
     FCanvas : TCanvas;
     FOffsetX: Integer;
@@ -53,9 +53,9 @@ Type
 
 implementation
 
-{ TGDIRenderer }
+{ TNativeCanvasRenderer }
 
-procedure TGDIRenderer.Circle(xcenter, ycenter, Radius, Rotate: Double);
+procedure TNativeCanvasRenderer.Circle(xcenter, ycenter, Radius, Rotate: Double);
 begin
   FCanvas.Ellipse( FOffsetX+Round(xcenter-Radius),
                    FOffsetY+Round(ycenter-radius),
@@ -63,19 +63,19 @@ begin
                    FOffsetY+Round(ycenter+radius));
 end;
 
-procedure TGDIRenderer.SetOffsetX(const AValue: Integer);
+procedure TNativeCanvasRenderer.SetOffsetX(const AValue: Integer);
 begin
   if FOffsetX=AValue then exit;
   FOffsetX:=AValue;
 end;
 
-procedure TGDIRenderer.SetOffsetY(const AValue: Integer);
+procedure TNativeCanvasRenderer.SetOffsetY(const AValue: Integer);
 begin
   if FOffsetY=AValue then exit;
   FOffsetY:=AValue;
 end;
 
-constructor TGDIRenderer.Create(aCanvas: TCanvas);
+constructor TNativeCanvasRenderer.Create(aCanvas: TCanvas);
 begin
   inherited Create;
   Assert(Assigned(aCanvas));
@@ -83,24 +83,24 @@ begin
   SetOffset(0, 0);
 end;
 
-procedure TGDIRenderer.Line(x, y, xx, yy: Double);
+procedure TNativeCanvasRenderer.Line(x, y, xx, yy: Double);
 begin
   FCanvas.MoveTo(FOffsetX+Round(x),FOffsetY+Round(y));
   FCanvas.LineTo(FOffsetX+Round(xx),FOffsetY+Round(yy));
 end;
 
-procedure TGDIRenderer.Text(x, y : Double; Text: String);
+procedure TNativeCanvasRenderer.Text(x, y : Double; Text: String);
 begin
   FCanvas.TextOut(FOffsetX+Round(x),FOffsetY+Round(y),Text);
 end;
 
-procedure TGDIRenderer.SetOffset(X, Y: Integer);
+procedure TNativeCanvasRenderer.SetOffset(X, Y: Integer);
 begin
   FOffsetX := X;
   FOffsetY := Y;
 end;
 
-procedure TGDIRenderer.MoveOffset(byX, byY: Integer);
+procedure TNativeCanvasRenderer.MoveOffset(byX, byY: Integer);
 begin
   FOffsetX := FOffsetX + byX;
   FOffsetY := FOffsetY + byY;

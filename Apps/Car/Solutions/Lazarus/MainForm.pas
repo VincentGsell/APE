@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  uApeEngine, uVector, uRenderer.GDI, uCar, uBridge, uSurfaces, uCapsule,
+  uApeEngine, uVector, uRenderer.NativeCanvas, uCar, uBridge, uSurfaces, uCapsule,
   uSwingDoor, uRotator, ExtCtrls, uCarLevel;
 
 type
@@ -32,7 +32,7 @@ type
   public
     { public declarations }
     TheLevel : TLevel;
-    Renderer : TGDIRenderer;
+    Renderer : TNativeCanvasRenderer;
 
     function IsKeyDown(k : Char) : boolean; overload;
     function IsKeyDown(w : Word) : boolean; overload;
@@ -48,7 +48,7 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  Renderer :=  TGDIRenderer.Create(Canvas);
+  Renderer :=  TNativeCanvasRenderer.Create(Canvas);
   TheLevel := TLevel.Create(Renderer);
   DoubleBuffered := true;
   InitKeyboard;

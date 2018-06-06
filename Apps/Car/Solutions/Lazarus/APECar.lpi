@@ -7,14 +7,105 @@
       <MainUnit Value="0"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
-      <ActiveWindowIndexAtStart Value="-1"/>
     </General>
     <VersionInfo>
       <Language Value=""/>
       <CharSet Value=""/>
     </VersionInfo>
-    <BuildModes Count="1">
+    <BuildModes Count="4" Active="Windows Intel64 Release">
       <Item1 Name="default" Default="True"/>
+      <Item2 Name="Linux Intel64 Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="exe\ApeCar_$(TargetCPU)-$(TargetOS)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\..\Sources;..\..\..\..\Sources"/>
+            <UnitOutputDirectory Value="bin"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="linux"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Linux arm Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="exe\ApeCar_$(TargetCPU)-$(TargetOS)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\..\Sources;..\..\..\..\Sources"/>
+            <UnitOutputDirectory Value="bin"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="linux"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Windows Intel64 Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="exe\ApeCar_$(TargetCPU)-$(TargetOS)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="..\..\Sources;..\..\..\..\Sources"/>
+            <UnitOutputDirectory Value="bin"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+          </Linking>
+        </CompilerOptions>
+      </Item4>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -37,17 +128,17 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="37">
+    <Units Count="42">
       <Unit0>
         <Filename Value="APECar.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="41" Y="11"/>
-        <UsageCount Value="32"/>
+        <EditorIndex Value="4"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="..\forms\MainForm.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -234,18 +325,23 @@
       </Unit31>
       <Unit32>
         <Filename Value="MainForm.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <CursorPos Y="40"/>
-        <UsageCount Value="10"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="59" Y="9"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
       </Unit32>
       <Unit33>
-        <Filename Value="..\..\..\..\Sources\uRenderer.GDI.pas"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <Filename Value="..\..\..\..\Sources\urenderer.nativecanvas.pas"/>
+        <UnitName Value="uRenderer.NativeCanvas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="2"/>
+        <CursorPos X="68" Y="27"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit33>
       <Unit34>
         <Filename Value="MainForm.lfm"/>
@@ -262,18 +358,69 @@
       </Unit35>
       <Unit36>
         <Filename Value="E:\Code\AfterWarpFrameWork\PXL\trunk\Source\Android.AppGlue.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
         <TopLine Value="8"/>
         <CursorPos X="13" Y="21"/>
         <UsageCount Value="10"/>
       </Unit36>
+      <Unit37>
+        <Filename Value="..\..\Sources\uRectComposite.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="180" Y="51"/>
+        <UsageCount Value="10"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\..\..\Sources\uAbstractItem.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="69" Y="39"/>
+        <UsageCount Value="10"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\..\Sources\uBridge.pas"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="9" Y="27"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\..\..\..\Sources\uGroup.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="48" Y="27"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\..\..\..\Sources\uComposite.pas"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="19" Y="4"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit41>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="MainForm.pas"/>
+        <Caret Line="9" Column="46"/>
+      </Position1>
+      <Position2>
+        <Filename Value="MainForm.pas"/>
+        <Caret Line="35" Column="29" TopLine="14"/>
+      </Position2>
+      <Position3>
+        <Filename Value="MainForm.pas"/>
+        <Caret Line="46" Column="25" TopLine="30"/>
+      </Position3>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="exe\ApeCar_$(TargetCPU)-$(TargetOS)"/>
+    </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <OtherUnitFiles Value="..\..\Sources;..\..\..\..\Sources"/>

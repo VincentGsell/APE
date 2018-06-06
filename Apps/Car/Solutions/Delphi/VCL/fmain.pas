@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uCarLevel, uRenderer.GDI, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uCarLevel, uRenderer.NativeCanvas, Vcl.ExtCtrls;
 
 type
   TFormCar = class(TForm)
@@ -24,7 +24,7 @@ type
     Keys: array[word] of boolean;
     { Public declarations }
     TheLevel : TLevel;
-    Renderer : TGDIRenderer;
+    Renderer : TNativeCanvasRenderer;
   end;
 
 var
@@ -35,7 +35,7 @@ implementation
 {$R *.dfm}
 procedure TFormCar.FormCreate(Sender: TObject);
 begin
-  Renderer :=  TGDIRenderer.Create(Canvas);
+  Renderer :=  TNativeCanvasRenderer.Create(Canvas);
   TheLevel :=  TLevel.Create(Renderer);
   DoubleBuffered := true;
 end;

@@ -13,7 +13,6 @@ uses
   uCollisionDetector in '..\..\..\..\..\Sources\uCollisionDetector.pas',
   uCollisionResolver in '..\..\..\..\..\Sources\uCollisionResolver.pas',
   uComposite in '..\..\..\..\..\Sources\uComposite.pas',
-  uRenderer.GDI in '..\..\..\..\..\Sources\uRenderer.GDI.pas',
   uGroup in '..\..\..\..\..\Sources\uGroup.pas',
   uInterval in '..\..\..\..\..\Sources\uInterval.pas',
   uLogger in '..\..\..\..\..\Sources\uLogger.pas',
@@ -33,7 +32,8 @@ uses
   uRectComposite in '..\..\..\Sources\uRectComposite.pas',
   uRotator in '..\..\..\Sources\uRotator.pas',
   uSurfaces in '..\..\..\Sources\uSurfaces.pas',
-  uSwingDoor in '..\..\..\Sources\uSwingDoor.pas';
+  uSwingDoor in '..\..\..\Sources\uSwingDoor.pas',
+  uRenderer.NativeCanvas in '..\..\..\..\..\Sources\uRenderer.NativeCanvas.pas';
 
 {$R *.res}
 

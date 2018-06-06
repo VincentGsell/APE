@@ -24,7 +24,7 @@ unit uGroup;
 
 interface
 
-uses uAbstractCollection, uvector, Classes, uComposite, uAbstractPArticle,
+uses uAbstractCollection, uvector, Classes, uComposite, uAbstractParticle,
      uAbstractConstraint, uRenderer;
 
 Type

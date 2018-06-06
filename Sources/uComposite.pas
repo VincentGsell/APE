@@ -24,7 +24,7 @@ unit uComposite;
 
 interface
 
-Uses uVector, uAbstractCollection, MAth, uAbstractPArticle, uMathUtil, Classes,
+Uses uVector, uAbstractCollection, MAth, uAbstractParticle, uMathUtil, Classes,
      uSpringConstraint;
 
 Type
